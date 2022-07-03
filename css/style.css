@@ -1,0 +1,125 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+
+/* CONTAINER */
+#container {
+    height: 100%;
+}
+
+/* COMPUTER */
+.computer-holder {
+    position: relative;
+    background-color: darkcyan;
+    height: 45%;
+}
+
+#computer-choice {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 200px;
+    text-align: center;
+    width: 70%;
+    transform: translate(-50%, 0) rotate(180deg);
+}
+
+.avatar {
+    text-align: center;
+}
+
+.avatar > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* RESULT  */
+
+.result-holder {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.result-holder > .label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    background-color: #FF8800;
+}
+
+.result-holder > .result-element {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 150px;
+}
+
+/* USER */
+.user-holder {
+    background-color: gray;
+    height: 45%;
+}
+
+.user-option {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.user-option > button {
+    width: 12em;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.user-option > button:hover {
+    color: white;
+    background-color: #CC0000;
+}
+
+.user-option > button:active {
+    background-color: brown;
+}
+
+#user-choice {
+    font-size: 200px;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    #computer-choice {
+        font-size: 160px;
+    }
+
+    #user-choice {
+        font-size: 160px;
+    }
+
+    .user-option > button {
+        width: 5em;
+        height: 30px;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+}

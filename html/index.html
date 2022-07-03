@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="computer-holder">
+            <div class="avatar">
+                <img src="../media/hellomdfk.jpg" alt="hellomdfk">
+            </div>
+            <div id="computer-choice">
+
+            </div>
+        </div>
+
+        <div class="result-holder">
+            <div class="label" id="computer-label">Trinh Vu</div>
+            <div id="computer" class="result-element"></div>
+            <div id="score" class="result-element">
+                <div id="computer-score">0</div>
+                :
+                <div id="user-score">0</div>
+            </div>
+            <div id="user" class="result-element"></div>
+            <div class="label" id="user-label">You</div>
+        </div>
+
+        <div class="user-holder">
+            <div id="user-choice">
+
+            </div>
+
+            <div class="user-option">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissor">Scissor</button>
+            </div>
+        </div>
+    </div>
+
+    <audio controls autoplay loop style="display: none;">
+        <source src="../media/song.mp3" type="audio/mpeg">
+    </audio>
+    <script src="../script/constant.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+
+</html>
